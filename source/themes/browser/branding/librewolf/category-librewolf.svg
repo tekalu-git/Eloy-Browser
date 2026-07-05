@@ -1,0 +1,16 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <circle cx="256" cy="256" r="256" fill="#05070C"/>
+
+  <!-- Core signal body -->
+  <circle cx="256" cy="256" r="140" fill="white" opacity="0.05"/>
+
+  <!-- Directional signal cut (creates “intent”) -->
+  <path d="M170 260C210 190 300 190 342 260C300 330 210 330 170 260Z"
+        fill="white" opacity="0.09"/>
+
+  <!-- Focus node -->
+  <circle cx="256" cy="260" r="14" fill="white" opacity="0.45"/>
+
+</svg>

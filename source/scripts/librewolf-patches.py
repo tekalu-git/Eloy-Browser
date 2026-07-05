@@ -100,6 +100,16 @@ def librewolf_patches():
     # copy branding files..
     exec("cp -r ../themes/browser .")
 
+    # Eloy: package the Poison Mode extension and stage it as a
+    # distribution add-on (same staging folder that policies.json and
+    # librewolf.cfg use further down, i.e. `lw/`).
+    exec('mkdir -p lw/extensions')
+    exec((
+        '(cd ../patches/eloy-poison-mode && zip -rq -X '
+        '../../{}/lw/extensions/eloy-poison-mode@eloybrowser.org.xpi '
+        'manifest.json background.js personas.js popup.html popup.js popup.css icons)'
+    ).format(srcdir))
+
     # copy the right search-config.json file
     exec('cp -v ../assets/search-config.json services/settings/dumps/main/search-config.json')
 

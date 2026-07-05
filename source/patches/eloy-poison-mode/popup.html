@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="header">
+      <img src="icons/icon.svg" alt="" class="logo" />
+      <h1>Poison Mode</h1>
+    </div>
+
+    <label class="toggle-row">
+      <span>Enabled</span>
+      <input type="checkbox" id="enabled-toggle" />
+    </label>
+
+    <label class="field-row">
+      <span>Persona</span>
+      <select id="persona-select">
+        <option value="random">Random</option>
+      </select>
+    </label>
+
+    <p class="status" id="status-line">Off</p>
+
+    <p class="note">
+      Placeholder implementation — periodically fires an unrelated search
+      through your default search engine in a hidden background tab to
+      blur your real interests. Add more personas in
+      <code>personas.js</code>.
+    </p>
+
+    <script src="personas.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

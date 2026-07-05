@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Eloy Poison Mode",
+  "short_name": "Poison Mode",
+  "version": "0.1.0",
+  "description": "Blurs your browsing profile by periodically firing unrelated searches from a rotating cast of personas.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "eloy-poison-mode@eloybrowser.org",
+      "strict_min_version": "115.0"
+    }
+  },
+  "permissions": ["storage", "alarms", "tabs", "search"],
+  "background": {
+    "scripts": ["personas.js", "background.js"]
+  },
+  "action": {
+    "default_title": "Eloy Poison Mode",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon.svg",
+      "32": "icons/icon.svg",
+      "48": "icons/icon.svg",
+      "96": "icons/icon.svg"
+    }
+  },
+  "icons": {
+    "48": "icons/icon.svg",
+    "96": "icons/icon.svg"
+  }
+}

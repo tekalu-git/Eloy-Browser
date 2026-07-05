@@ -8,17 +8,17 @@
 
 # BrandFullNameInternal is used for some registry and file system values
 # instead of BrandFullName and typically should not be modified.
-!define BrandFullNameInternal "LibreWolf"
-!define BrandFullName         "LibreWolf"
-!define CompanyName           "LibreWolf"
-!define URLInfoAbout          "https://www.libreWolf.gitlab.io"
-!define HelpLink              "https://github.com/LibreWolf-Browser"
+!define BrandFullNameInternal "EloyBrowser"
+!define BrandFullName         "EloyBrowser"
+!define CompanyName           "EloyBrowser"
+!define URLInfoAbout          "https://github.com/tekalu-git/Eloy-Browser"
+!define HelpLink              "https://github.com/tekalu-git/Eloy-Browser"
 
-!define URLStubDownloadX86 "https://github.com/LibreWolf-Browser/LibreWolf/releases"
-!define URLStubDownloadAMD64 "https://github.com/LibreWolf-Browser/LibreWolf/releases"
-!define URLStubDownloadAArch64 "https://github.com/LibreWolf-Browser/LibreWolf/releases"
-!define URLManualDownload "https://github.com/LibreWolf-Browser/LibreWolf/releases"
-!define URLSystemRequirements "https://github.com/LibreWolf-Browser/LibreWolf"
+!define URLStubDownloadX86 "https://github.com/tekalu-git/Eloy-Browser/releases"
+!define URLStubDownloadAMD64 "https://github.com/tekalu-git/Eloy-Browser/releases"
+!define URLStubDownloadAArch64 "https://github.com/tekalu-git/Eloy-Browser/releases"
+!define URLManualDownload "https://github.com/tekalu-git/Eloy-Browser/releases"
+!define URLSystemRequirements "https://github.com/tekalu-git/Eloy-Browser/blob/main/Requirements.md"
 !define Channel "unofficial"
 
 # The installer's certificate name and issuer expected by the stub installer
