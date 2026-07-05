@@ -1,0 +1,35 @@
+@import "@fontsource-variable/manrope";
+@import "tailwindcss";
+
+/* Eloy Browser — light gray editorial theme
+   Light gray canvas, ink text, single muted green accent. */
+@theme {
+  --font-sans: "Manrope Variable", ui-sans-serif, system-ui, sans-serif;
+
+  --color-paper: #d1d5db;
+  --color-surface: #ffffff;
+  --color-ink: #18181b;
+  --color-ink-soft: #52525b;
+  --color-ink-faint: #a1a1aa;
+  --color-line: #e4e4e7;
+  --color-accent: #17714a;
+  --color-accent-soft: #e6f2ec;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* literal hex (not the @theme var) so the gray applies even if the token cache is stale */
+  background: #d1d5db;
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Soft accent-tinted glow for the logo (a white glow would be invisible on light gray) */
+.logo-glow {
+  filter: drop-shadow(0 0 8px rgba(23, 113, 74, 0.35))
+    drop-shadow(0 0 20px rgba(23, 113, 74, 0.2));
+}
